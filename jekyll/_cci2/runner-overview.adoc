@@ -34,43 +34,36 @@ There are two key use cases CircleCI aims to meet with the runner:
 
 == Available CircleCI runner platforms
 
-CircleCI runner is available on multiple platforms. Support levels fall into two categories:
-
-* <<Supported>>
-* <<Preview>>
+CircleCI runner is available on multiple platforms. Support levels fall into two categories: <<Supported>> and <<Preview>>.
 
 === Supported
 
-*Supported* Level platforms ensure that CircleCI runners are both built and tested on their respective systems.
-
-With a *Supported* platform, users receive the following:
+*Supported* platforms include platforms that CircleCI has finished building and testing binaries on. With a Supported platform, users receive the following:
 
 * Documentation and best practices
 * Support: CircleCI Customer Engineers will assist customers to resolve issues within their usual Gold Service Level Agreements (SLAs)
 
-*Supported* CircleCI runners are available on the following platforms:
-
-* Ubuntu 18.04 or later (x86_64 or ARM64)
-* Mac OS X 10.15+ (Intel)
-* macOS 11.2+ (Apple M1)
-
 === Preview
 
-On *Preview* Level platforms, CircleCI runners are currently in development, thus testing is not complete.
+*Preview* platforms are platforms where CircleCI runners are currently in development, thus testing is not complete. With a Preview platform, users receive the following:
 
-With a *Preview* platform, users receive the following:
-
-* A full integration that is a work-in-progress -- thus, some manual configuration may be required to install, configure, and deploy
+* An installation that is a work-in-progress -- thus, some manual configuration may be required to fully install, configure, and deploy
 * Work-in-progress documentation and best practices
 * Support: CircleCI Customer Engineers will provide assistance and guidance on best practices for installing, configuring, and operating CircleCI runners
 ** Users are encouraged to provide feedback in order to rapidly improve the CircleCI runner user experience and meet its necessary criteria as a *Supported* platform
 
-*Preview* CircleCI runners are available on the following platforms:
+=== Supported Platforms Matrix
 
-* Additional Linux distributions - RHEL, SUSE, Debian, etc. (x86_64 or ARM64)
-* Docker
-* Kubernetes
-* Windows
+[.table]
+[cols=8*, options="header"]
+[cols="h,1,1,1,1,1,1,1"]
+|===
+
+| Processor | macOS        | Windows | Ubuntu/Debian | RHEL/CentOS | Other Linux | Docker    | Kubernetes/Other Orchestrator
+| x86_64    | Supported    | Preview | Supported     | Supported   | Preview     | Supported | Preview
+| arm64     | Preview (M1) | Preview | Supported     | Preview     | Preview     | Preview   | Preview
+
+|===
 
 NOTE: Given the active development of Preview CircleCI runners, please https://circleci.com/contact/[contact us] if you
 have questions around support for your environment and use-case(s). We also invite you to https://circleci.canny.io/cloud-feature-requests[share feedback]
