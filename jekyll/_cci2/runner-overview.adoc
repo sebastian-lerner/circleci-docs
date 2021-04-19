@@ -60,7 +60,7 @@ CircleCI runner is available on multiple platforms. Support levels fall into two
 |===
 
 | Processor | macOS        | Windows | Ubuntu/Debian | RHEL/CentOS | Other Linux | Docker    | Kubernetes/Other Orchestrator
-| x86_64    | Supported    | Preview | Supported     | Supported   | Preview     | Supported | Preview
+| x86_64    | Supported    | Preview | Supported     | Supported   | Preview     | Supported | Supported
 | arm64     | Preview (M1) | Preview | Supported     | Preview     | Preview     | Preview   | Preview
 
 |===
