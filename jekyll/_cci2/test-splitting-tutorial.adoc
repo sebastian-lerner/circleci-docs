@@ -286,6 +286,11 @@ image::{{site.baseurl}}/assets/img/docs/test-splitting-by-timing.png[Testing ste
 
 In this tutorial, you have configured your pipeline to split tests by timing data using parallelism and `circleci tests` commands. By storing test results, you also enabled access to test data and insights for further analysis.
 
+[#known-limitations]
+== Known Limitations
+
+Test splitting by timing does not work on Windows resource classes at this time.
+
 [#next-steps]
 == Next steps
 
